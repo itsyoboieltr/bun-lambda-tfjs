@@ -1,0 +1,24 @@
+{
+  "name": "bun-lambda-tfjs",
+  "version": "1.0.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "deploy": "cdk deploy"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "5.3.3",
+    "fetchgit": "1.1.0",
+    "aws-cdk": "2.129.0",
+    "@aws-cdk/aws-lambda": "1.204.0",
+    "@aws-cdk/core": "1.204.0"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-core": "4.17.0",
+    "@tensorflow/tfjs-layers": "4.17.0",
+    "@tensorflow/tfjs-backend-cpu": "4.17.0"
+  }
+}
